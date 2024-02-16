@@ -1,0 +1,72 @@
+@use '../node_modules/@angular/material' as mat;
+
+@include mat.core();
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*::-webkit-scrollbar {
+  width: 0px !important;
+  background-color: white !important;
+}
+
+
+*::-webkit-scrollbar-thumb:horizontal {
+  width: 0px !important;
+  background-color: whitesmoke !important;
+  border-radius: 0px;
+}
+
+
+//----------------------------- SnackBar ----------------------------
+
+.failure-snackbar {
+  --mdc-snackbar-container-color: white;
+  --mdc-snackbar-supporting-text-color: black;
+
+
+  .mdc-snackbar__label {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mdc-snackbar__surface {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mdc-linear-progress__bar-inner {
+    border-radius: var(--mdc-snackbar-container-shape);
+  }
+
+  .mdc-linear-progress__buffer {
+    border-radius: var(--mdc-snackbar-container-shape);
+  }
+}
+
+.success-snackbar {
+  --mdc-snackbar-container-color: white;
+  --mdc-snackbar-supporting-text-color: green;
+
+  .mdc-snackbar__label {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mdc-snackbar__surface {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mdc-linear-progress__bar-inner {
+    border-radius: var(--mdc-snackbar-container-shape);
+  }
+
+  .mdc-linear-progress__buffer {
+    border-radius: var(--mdc-snackbar-container-shape);
+  }
+}
